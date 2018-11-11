@@ -39,12 +39,13 @@ def winner(board)
   token = " "
   won?(board).each do |pos|
     if board[pos] == "X"
-      token == "X"
+      token = "X"
     elsif board[pos] == "O"
-      token == "O"
+      token = "O"
     else
-      token == nil
+      token = nil
     end
   end
+  token
 end
 
