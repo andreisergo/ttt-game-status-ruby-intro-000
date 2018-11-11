@@ -37,7 +37,9 @@ end
 
 def winner(board)
  if won?(board).any? { |pos| board[pos] == "X" }
-    "X"
+  "X"
+else
+  nil
 end
 end
 
