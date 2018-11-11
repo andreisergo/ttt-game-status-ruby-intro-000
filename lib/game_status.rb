@@ -36,12 +36,6 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board).any? { |pos| board[pos] == "X" }
-    "X"
-  elsif won?(board).any? { |pos| board[pos] == "O" }
-    "O"
-  elsif !won?(board)
-    nil
-  end
+  nil
 end
 
