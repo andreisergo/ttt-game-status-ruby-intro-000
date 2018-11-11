@@ -36,16 +36,12 @@ def over?(board)
 end
 
 def winner(board)
-  token = " "
-  won?(board).each do |pos|
-    if board[pos] == "X"
-      token = "X"
-    elsif board[pos] == "O"
-      token = "O"
-    else
-      token = nil
-    end
+  if won?(board).any? { |pos| board[pos] == "X" }
+    "X"
+  elsif won?(board).any? { |pos| board[pos] == "O" }
+    "O"
+  elsif !won?(board)
+    nil
   end
-  token
 end
 
