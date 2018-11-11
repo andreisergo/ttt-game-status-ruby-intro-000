@@ -36,6 +36,8 @@ def over?(board)
 end
 
 def winner(board)
- 
+ if won?(board).any? { |pos| board[pos] == "X" }
+    "X"
+end
 end
 
