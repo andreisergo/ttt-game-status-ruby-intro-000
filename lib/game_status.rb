@@ -36,7 +36,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) # objects have boolean values!!
+  if won?(board) # Ruby objects have boolean values!!
     board[won?(board).first]
   end
 end
