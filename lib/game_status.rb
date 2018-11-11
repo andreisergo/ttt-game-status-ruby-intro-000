@@ -40,6 +40,8 @@ def winner(board)
     "X"
   elsif won?(board).any? { |pos| board[pos] == "O" }
     "O"
+  elsif !won?(board)
+    nil
   end
 end
 
