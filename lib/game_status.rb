@@ -46,6 +46,5 @@ def winner(board)
       token == nil
     end
   end
-  return token
 end
 
